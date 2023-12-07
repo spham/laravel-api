@@ -1,0 +1,86 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Gestion de projet",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/project": {
+            "get": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Liste tous les projets",
+                "description": "Display a listing of the resource.",
+                "operationId": "getprojects",
+                "responses": {
+                    "200": {
+                        "description": "Liste des projects"
+                    }
+                }
+            }
+        },
+        "/api/store": {
+            "post": {
+                "summary": "Enregistrer un nouveau projet",
+                "description": "Store a newly created resource in storage.",
+                "operationId": "86a2c73d11ce1adbd15c6814353ccd63",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Le nom du projet",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "La description du projet",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "La date de debut du projet",
+                        "required": false,
+                        "schema": {
+                            "type": "date"
+                        }
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "La date de fin du projet",
+                        "required": false,
+                        "schema": {
+                            "type": "date"
+                        }
+                    },
+                    {
+                        "name": "rate",
+                        "in": "query",
+                        "description": "La note du projet",
+                        "required": false,
+                        "schema": {
+                            "type": "date"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Projet enregistre avec succes"
+                    },
+                    "422": {
+                        "description": "Validation errors"
+                    }
+                }
+            }
+        }
+    }
+}

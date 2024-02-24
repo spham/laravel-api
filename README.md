@@ -1,5 +1,7 @@
 # Cours Udemy : API REST avec Laravel
 
+https://www.udemy.com/course/laravel-10-creation-dapi-rest-avancees
+
 Bienvenue dans le repo du cours Udemy sur la création d'API REST avec le framework Laravel. Ce cours couvre de nombreux aspects, de la mise en place initiale à des sujets avancés tels que l'authentification, la documentation, et bien plus encore. 
 **Pour accéder au cours sur Udemy : [Cours Udemy : API REST avec Laravel](https://www.udemy.com/course/laravel-10-creation-dapi-rest-avancees/)**
 
